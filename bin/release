@@ -6,5 +6,5 @@ BUILD_DIR=$1
 cat << EOF
 ---
 default_process_types:
-  web: /usr/share/elasticsearch/bin/elasticsearch -f -Des.path.conf=$HOME/app -Des.path.home=$HOME/app -Des.http.port=$PORT -Des.path.data=$ES_DATA_DIR
+  web: /usr/share/elasticsearch/bin/elasticsearch -Des.path.conf=$HOME/app -Des.http.port=$PORT -Des.path.data=$ES_DATA_DIR
 EOF
