@@ -38,6 +38,8 @@ if which apt-get; then
   sudo apt-get install --yes --force-yes elasticsearch
 fi
 echo '==> System Overlay'
+#miles of files!
+cp -R ${BUILDPACK_DIR}/overlay/* ${HOME}/
 #this if statement makes a lot more sense when you learn that I occasionally
 #run this buildpack on my Mac...
 if which apt-get; then
