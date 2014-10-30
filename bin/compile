@@ -23,6 +23,7 @@ done
 
 if which apt-get; then
   echo '==> Installing Oracle Java 1.8'
+  sudo apt-get update
   sudo apt-get install -y software-properties-common
   sudo add-apt-repository --yes ppa:webupd8team/java
   sudo apt-get update
